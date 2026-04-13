@@ -61,7 +61,7 @@ eg2:
 
 
 ligand_induced_degradation: 
-    lrc_cave + smad_comp_nuc > $pool 
+    lrc_cave  > $pool 
     k_lid*lrc_cave*smad_comp_nuc
 
 lrc_ee_degradation: 
@@ -79,7 +79,7 @@ smad4_nuclear_import:
     kexp_smad4*smad4_nuc*(V_nuc/V_cyt)
 
 complex_formation: 
-    smad2_cyt + smad4_cyt + lrc_ee > smad_comp_cyt
+    smad2_cyt + smad4_cyt > smad_comp_cyt
     ksmad*smad2_cyt*smad4_cyt*lrc_ee
 
 smad_complex_nuclear_import: 
@@ -115,7 +115,7 @@ kr_ee = 0.033
 ki_cave = 0.33
 kr_cave = 0.0372
 kcd = 0.005
-k_lrc = 1.0e10
+k_lrc = 2197
 k_lid = 0.02609
 kdeg_t1r = 0.005 
 kdeg_t2r = 0.025 
