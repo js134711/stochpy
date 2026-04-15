@@ -46,8 +46,8 @@ seques_calvelolar_lrc:
     ki_cave*lrc_surf
 
 seques_ee_lrc: 
-    lrc_surf > lrc_ee
-    ki_ee*lrc_surf
+    lrc_surf = lrc_ee
+    ki_ee*lrc_surf - kr_ee*lrc_ee
 
 deseques_cal_t1r: 
     lrc_cave > t1r_surf + t2r_surf 
